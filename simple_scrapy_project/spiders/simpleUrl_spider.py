@@ -14,7 +14,7 @@ class simpleUrl(scrapy.Spider):
     name = 'simpleUrl'
 
     start_urls = ['http://lab.scrapyd.cn/page/1/',
-            'http://lab.scrapyd.cn/page/2/']
+                  'http://lab.scrapyd.cn/page/2/']
 
     def parse(self, response):
         page = response.url.split('/')[-2]
